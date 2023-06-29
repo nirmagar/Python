@@ -1,1 +1,42 @@
+#2.4.1.7
+john=3 #Assigning values to the variables
+mary=5
+adam=6
+print(john,mary,adam,sep=",") #printing variables in one line separated by commas
+total_apples=john+mary+adam #creating new variable total_apples and adding the previous 3 variables
+print(total_apples) #printing the value stored in total_apples
+NewApple=2 #creating new variable with different value
+AppleCalc=total_apples+NewApple #adding new variable with previous total
+print("Total number of apples:",total_apples)#printing string and an integer together
+print("total_apples after addition:",AppleCalc) #printing string and an integer together
+average_apples=AppleCalc/3 #creating another variable
+print("Average apples:",average_apples)#printing average apples output
 
+
+#2.4.1.9
+kilometers = 12.25
+miles = 7.38
+miles_to_kilometers = miles*1.6 #Converting miles to kilometers
+kilometers_to_miles = kilometers/1.6#Converting kilometers to miles
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+furlongs=4
+furlongs_to_miles=furlongs/8 #Converting furlongs to mile
+print(furlongs, "furlongs is equal to", furlongs_to_miles, "miles.") #printing miles into number of furlongs
+
+
+#2.4.1.10
+x = 0 #hardcode test with x=0
+x = float(x)
+y=3*x**3-2*x**2+3*x-1 #as per expression 3x3-2x2+3x-1
+print("y =", y)
+
+x = 1 #hardcode test with x=1
+x = float(x)
+y=3*x**3-2*x**2+3*x-1 #as per expression 3x3-2x2+3x-1
+print("y =", y)
+
+x = -1 #hardcode test with x=-1
+x = float(x)
+y=3*x**3-2*x**2+3*x-1 #as per expression 3x3-2x2+3x-1
+print("y =", y)
