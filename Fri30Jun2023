@@ -41,7 +41,7 @@ total_minutes = hour*60 + mins + dura #adding up total time in minutes
 end_hour = (total_minutes//60)%24 #ensuring that the hour value stays within the range of 0-23.
 end_minute = total_minutes%60 #The end minute is obtained by taking the remainder when the total minutes are divided by 60.
 
-print("End Time: {:02d}:{:02d}".format(end_hour, end_minute)) #printing end time in hr:min format
+print(end_hour, ":", end_minute, sep="") #printing end time in hr:min format
 
 
 #2.6.1.12 Section summary exercise
