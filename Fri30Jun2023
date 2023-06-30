@@ -1,1 +1,21 @@
+#2.6.1.9 LAB Simple Input and Output
+
+a=float(input("Enter your number for a:")) # input a float value for variable a here
+b=float(input("Enter your number for b:")) # input a float value for variable b here
+
+#Arithmetic operations
+add=a+b 
+subtract=a-b
+multiply=a*b
+divide=a/b
+exponent=a**b
+floor_division=a//b
+print("\nadd(a+b):",add) # output the result of addition here
+print("subtract(a-b):",subtract) # output the result of subtraction here
+print("multiply(a*b):",multiply) # output the result of multiplication here
+print("divide(a/b):",divide) # output the result of division here
+print("Exponent(a_to_the_power_of_b):",exponent) # output the result of exponent
+print("Floor Division(a//b):",floor_division) # output the result of floor division
+print("\nThat's all, folks!")
+
 
