@@ -26,7 +26,32 @@ x = float(input("Enter value for x: "))
 y = 1 / (x + (1 / (x + (1 / (x + (1 / x)))))) # calculating the expression 
 z = (x + (x + (x + x**-1) **-1) **-1)**-1 # calculating the expression using **
 
-print("y =", y)
-print("z =", z)
+print("y =", y) # output the result of y
+print("z =", z) # output the result of z
+
+
+#2.6.1.11 LAB: Operators and expressions
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+# Write your code here.
+# End time calculation
+total_minutes = hour*60 + mins + dura #adding up total time in minutes
+end_hour = (total_minutes//60)%24 #ensuring that the hour value stays within the range of 0-23.
+end_minute = total_minutes%60 #The end minute is obtained by taking the remainder when the total minutes are divided by 60.
+
+print("End Time: {:02d}:{:02d}".format(end_hour, end_minute)) #printing end time in hr:min format
+
+
+#2.6.1.12 Section summary exercise
+x = int(input("Enter a number: ")) # The user enters 2
+print(x * "5")
+
+x = input("Enter a number: ") # The user enters 2
+print(type(x))
+
+
+
 
 
