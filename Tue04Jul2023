@@ -16,3 +16,51 @@ else:
 
 
 
+#3.2.1.3 LAB (magician secret number 777 )
+
+secret_number=777 #Magician secret number
+user_guess = False #user_guess = False to set the while loop
+print(
+"""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
++================================+
+""")     #printing multiple lines with tripple quotes 
+
+while user_guess == False:  #while condition with the condition user_guess=False
+    
+    user_input=int(input("Guess the secret magic number:")) #User will guess a magic number
+    
+    if user_input == secret_number: #if user input matches secret number then print you are free
+        print ("Well done, muggle! You are free now")
+        user_guess=True   #user_guess = True will end the while loop
+        
+    elif user_input == 7:  #elif user input is 7 then print 'you are closer'
+        print ("You are getting closer!")
+
+    else:                  #else print you're stuck in loop
+        print ("Ha ha! You're stuck in my loop!") 
+
+
+
+#3.2.1.6 LAB (Import time)
+import time #import time module to make use of sleep() function
+
+# Write a for loop that counts to five.
+    # Body of the loop - print the loop iteration number and the word "Mississippi".
+    # Body of the loop - use: time.sleep(1)
+
+# Write a print function with the final message.
+
+for i in range(1,6): #for loop to count the numbers 1 to 5
+    print(i, "Mississippi") #print 1 Mississippi and so on up to 5 Mississippi
+    
+    time.sleep(1)    #body of the loop which will pauses for 1 second
+    
+print("Ready or not, here I come!") #print final message
+
+
