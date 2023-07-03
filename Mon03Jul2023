@@ -1,1 +1,49 @@
 #3.1.1.4 LAB
+n=int(input("Enter an integer:")) #Input an integer value only in the variable 'n'.
+print(n>=100)   #prints true/false with the condition n>=100.
+
+
+#3.1.1.10 LAB
+plant = input("Enter the name of a plant: ") #Input string in variable plant.
+
+#if elif else condition to print the statement as stated
+if plant == "Spathiphyllum":      
+    print("Yes - Spathiphyllum is the best plant ever!")
+elif plant == "spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+else:
+    print("Spathiphyllum! Not", plant + "!")
+
+
+#3.1.1.11 LAB
+income = float(input("Enter the annual income: "))
+tax = 0
+if income <= 85528:
+    tax = round(income * 0.18 - 556.02) 
+else:
+    tax = round(14839.02 + (income - 85528) * 0.32)
+if tax > 0:
+    print("The tax is:", tax, "thalers")
+else:
+    print("The tax is: 0 thalers")
+
+
+#3.1.1.11 LAB (if the person does jury service, they pay half tax, if they are paying tax)
+
+income = float(input("Enter the annual income: "))
+jury_service = input("Are you doing jury service? (yes/no): ")
+
+tax = 0
+if income <= 85528:
+    tax = round(income * 0.18 - 556.02)
+else:
+    tax = round(14839.02 + (income - 85528) * 0.32)
+
+if jury_service == "yes": 
+    tax = tax / 2
+
+tax = round(tax)
+if tax < 0:
+    tax = 0
+
+print("The tax is:", tax, "thalers")
