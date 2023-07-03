@@ -16,10 +16,10 @@ else:
 
 
 #3.1.1.11 LAB
-income = float(input("Enter the annual income: "))
+income = float(input("Enter the annual income: ")) #variable income
 tax = 0
 if income <= 85528:
-    tax = round(income * 0.18 - 556.02) 
+    tax = round(income * 0.18 - 556.02)  #round function rounding up the mathematic calculation
 else:
     tax = round(14839.02 + (income - 85528) * 0.32)
 if tax > 0:
@@ -30,19 +30,19 @@ else:
 
 #3.1.1.11 LAB (if the person does jury service, they pay half tax, if they are paying tax)
 
-income = float(input("Enter the annual income: "))
-jury_service = input("Are you doing jury service? (yes/no): ")
+income = float(input("Enter the annual income: "))   #variable income
+jury_service = input("Are you doing jury service? (yes/no): ")   #variable jury_service
 
 tax = 0
 if income <= 85528:
-    tax = round(income * 0.18 - 556.02)
+    tax = round(income * 0.18 - 556.02)   #round function rounding up the mathematic calculation
 else:
     tax = round(14839.02 + (income - 85528) * 0.32)
 
 if jury_service == "yes": 
     tax = tax / 2
 
-tax = round(tax)
+tax = round(tax) #round function rounding up the value of tax
 if tax < 0:
     tax = 0
 
