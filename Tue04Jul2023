@@ -5,6 +5,9 @@ if year %4 != 0:
 
 elif year != (year/100):
      print ("it's a leap year")
-
+     
 else:
      print ("it's a leap year")
+
+if year <1582:
+     print ("Not within the Gregorian calendar period")
