@@ -1,0 +1,10 @@
+#3.2.1.9 lab
+secret_word="chupacabra" #setting up the secret_word variable as chupacabra
+while True:
+    word=input("Enter a secret word:")  #inputting a string into a variable word
+    
+    if word == secret_word:     #comparing if inputted word and secre_word matches?
+        print ("You've successfully left the loop") #print the msg
+        break      #skip the while loop
+
+
