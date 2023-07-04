@@ -47,6 +47,7 @@ while user_guess == False:  #while condition with the condition user_guess=False
 
 
 
+
 #3.2.1.6 LAB (Import time)
 import time #import time module to make use of sleep() function
 
