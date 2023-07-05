@@ -8,3 +8,36 @@ while True:
         break      #skip the while loop
 
 
+#3.2.1.10 LAB
+
+# Prompt the user to enter a word
+# and assign it to the user_word variable.
+user_word = input ("Enter a word:")
+user_word = user_word.upper() #covert the word into uppercase
+
+for letter in user_word:  #using for loop iterating over each letter in 'user_word'
+    # Complete the body of the for loop.
+    if letter in 'AEIOU':  #checking if current letter is vowel
+        continue #skip the rest of code and move to next iteration
+        
+    print(letter) #print the letter
+
+
+#3.2.1.11 LAB
+
+word_without_vowels = "" #variable word_withou_vowels
+
+# Prompt the user to enter a word
+# and assign it to the user_word variable.
+user_word=input("Enter a word:") #input word in variable user_word
+user_word=user_word.upper()      #converts user_word to uppercase
+
+for letter in user_word:  #using for loop, iterating each letter in user_word
+    # Complete the body of the loop.
+    if letter in 'AEIOU':   #compares if letter is a vowel inside the for loop
+        continue        #skip the rest of code in the loop if letter is vowel and move to next iteration
+    word_without_vowels +=letter  #+= will concatenate and build string of non-vowel letters
+
+print(word_without_vowels, end='\n')# Print the word assigned to word_without_vowels.
+
+
