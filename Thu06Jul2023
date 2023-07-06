@@ -1,0 +1,31 @@
+#3.2.1.14 
+blocks = int(input("Enter the number of blocks: "))   # Prompt the user to enter the number of blocks
+height = 0  # Initialize the height of the pyramid
+if blocks == 0:       # Check if there are no blocks
+    height = 0        # The height of the pyramid is 0
+elif blocks == 1:     # Check if there is only one block
+    height = 1        # The height of the pyramid is 1
+else:                 # For any other number of blocks (2 or above)
+    total_blocks = 0               # Initialize the total number of blocks used
+    for i in range(1, blocks + 1): # Iterate from 1 to blocks and calculate the height
+        total_blocks += i          # Add the blocks of each layer to the total_blocks variable     
+        if total_blocks > blocks:  # If the total_blocks exceed the available blocks
+            height = i - 1         # Subtract 1 from the current iteration variable to get the correct height
+            break                  # Exit the loop
+print("The height of the pyramid:", height)  # Print the height of the pyramid
+
+
+#3.2.1.15 LAB
+c0 = int(input("Enter a natural number: "))  # Prompt the user to enter a natural number
+steps = 0  # Initialize the steps counter
+while c0 != 1:  # Loop until c0 becomes 1
+    print(c0)  # Print the current value of c0
+    if c0 % 2 == 0:  # If c0 is even
+        c0 = c0 // 2  # Update c0 by dividing it by 2
+    else:  # If c0 is odd
+        c0 = 3 * c0 + 1  # Update c0 by multiplying it by 3 and adding 1
+    steps += 1  # Increment the steps counter
+print(c0)  # Print the final value of c0 (should be 1)
+print("Steps:", steps)  # Print the number of steps taken
+
+
