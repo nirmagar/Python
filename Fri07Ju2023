@@ -1,0 +1,45 @@
+#3.4.1.6 LAB
+hat_list = [1, 2, 3, 4, 5]  # This is an existing list of numbers hidden in the hat.
+
+# Step 1: write a line of code that prompts the user
+number=int(input("Enter a number:"))
+# to replace the middle number with an integer number entered by the user.
+hat_list[len(hat_list)//2] = number
+
+# Step 2: write a line of code that removes the last element from the list.
+del hat_list[-1]
+
+# Step 3: write a line of code that prints the length of the existing list.
+print("The length of the existing list is:",len(hat_list))
+print(hat_list)
+
+
+#3.4.1.13 LAB
+# step 1: Create an empty list named beatles
+beatles = []
+print("Step 1:", beatles)
+
+# Step 2: Add names to the list using funciton append()
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print("Step 2:", beatles)
+
+# Step 3: Prompt the user to add to the list using a for loop and function append()
+for new_member in range(2):
+    new_member = input("Enter a new member's name: ")
+    beatles.append(new_member)
+print("Step 3:", beatles)
+
+# step 4 using del to remove Stu & Pete from the list
+del beatles[-2]
+del beatles[-1]
+print("Step 4:", beatles)
+
+# step 5 function insert() to add to the beginning of the list
+beatles.insert(0,"Ringo Starr")
+print("Step 5:", beatles)
+
+
+# testing list legth
+print("The Fab", len(beatles))
