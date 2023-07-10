@@ -1,13 +1,7 @@
 #3.6.1.9 LAB
-def remove_duplicates(input_list):
-    result = []  # Create an empty list to store unique numbers
-    for num in input_list:  # Iterate through each number in the input list
-        if num not in result:  # Check if the number is not already in the result list
-            result.append(num)  # If not, add it to the result list
-    return result  # Return the list with duplicate numbers removed
-
 my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
-mylist = remove_duplicates(numbers)
+#
+# Write your code here.
+#
 print("The list with unique elements only:")
 print(my_list)
-
