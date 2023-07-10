@@ -6,8 +6,8 @@ def remove_duplicates(input_list):
             result.append(num)  # If not, add it to the result list
     return result  # Return the list with duplicate numbers removed
 
-# Example usage
-numbers = [1, 2, 3, 4, 2, 5, 3, 6, 1]
-unique_numbers = remove_duplicates(numbers)
-print(unique_numbers)
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+mylist = remove_duplicates(numbers)
+print("The list with unique elements only:")
+print(my_list)
 
